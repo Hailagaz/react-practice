@@ -15,12 +15,10 @@ function TableOfContents() {
 
 function Profile() {
 	return (
-		<div>
-			<img
-				src='https://i.imgur.com/MK3eW3As.jpg'
-				alt="Katherine Johnson"
-			/>
-		</div>
+		<img
+			src='https://i.imgur.com/MK3eW3As.jpg'
+			alt="Katherine Johnson"
+		/>
 	);
 }
 
@@ -29,8 +27,13 @@ function App() {
 		<div className="App">
 
 			<TableOfContents />
+			<section>
+				<h2>Example</h2>
+				<Profile />
+				<Profile />
+				<Profile />
+			</section>
 
-			<Profile />
 
 		</div>
 	);
