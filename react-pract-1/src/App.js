@@ -1,23 +1,39 @@
 import './App.css';
 
+function TableOfContents() {
+	return (
+		<article className='tableOfContents'>
+			<h1>My First Component</h1>
+			<ol>
+				<li>Components: UI Building Blocks</li>
+				<li>Defining a Component</li>
+				<li>Using a Component</li>
+			</ol>
+		</article>
+	);
+}
+
+function Profile() {
+	return (
+		<div>
+			<img
+				src='https://i.imgur.com/MK3eW3As.jpg'
+				alt="Katherine Johnson"
+			/>
+		</div>
+	);
+}
+
 function App() {
-  return (
-	  <div className="App">
-		  
-		  
-		  <article className='tableOfContents'>
-			  <h1>My First Component</h1>
-			  <ol>
-				  <li>Components: UI Building Blocks</li>
-				  <li>Defining a Component</li>
-				  <li>Using a Component</li>
-			  </ol>
-		  </article>
+	return (
+		<div className="App">
 
+			<TableOfContents />
 
+			<Profile />
 
-    </div>
-  );
+		</div>
+	);
 }
 
 export default App;
