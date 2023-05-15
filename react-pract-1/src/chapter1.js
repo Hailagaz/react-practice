@@ -1,7 +1,6 @@
 function TableOfContents() {
 	return (
 		<section className='tableOfContents'>
-			<h2>Chapter 1. Part 1</h2>
 			<ol>
 				<li>Components: UI Building Blocks</li>
 				<li>Defining a Component</li>
