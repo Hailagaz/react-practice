@@ -1,6 +1,7 @@
 export default function Chapter3() {
 	return (
 		<section>
+			<h2>Chapter 3</h2>
 			<ToDoList />
 		</section>
 	);
@@ -8,7 +9,7 @@ export default function Chapter3() {
 
 function ToDoList() {
 	return (
-		<div>
+		<>
 			<h1>Hedy Lamarr's Todos</h1>
 			<img
 				src="https://i.imgur.com/yXOvdOSs.jpg"
@@ -20,6 +21,6 @@ function ToDoList() {
 				<li>Rehearse a movie scene</li>
 				<li>Improve the spectrum technology</li>
 			</ul>
-		</div>
+		</>
 	);
 }
