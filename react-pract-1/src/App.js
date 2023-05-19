@@ -4,7 +4,7 @@ import Chapter2 from './chapters/chapter2';
 import { Profile } from './chapters/chapter2';
 import Chapter3 from './chapters/chapter3';
 import Chapter4 from './chapters/chapter4';
-
+import Chapter5 from './chapters/chapter5';
 
 function App() {
 	return (
@@ -18,6 +18,8 @@ function App() {
 			<Chapter3 />
 
 			<Chapter4 />
+
+			<Chapter5 />
 		</div>
 	);
 }
