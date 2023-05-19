@@ -25,12 +25,22 @@ function Avatar() {
 function ToDoList() {
 	const name = 'Hedy Lamarr';
 	return (
-		<h1>{name}'s ToDo List for {formatDate(today)}</h1>
+		<>
+			<h1>{name}'s ToDo List for {formatDate(today)}</h1>
+			<ul style={{
+				backgroundColor: 'black',
+				color: 'pink'
+			}}>
+				<li>Improve the videophone</li>
+				<li>Prepare aeronautics lectures</li>
+				<li>Work on the alcohol-fuelled engine</li>
+			</ul>
+		</>
 	);
 }
 
 const today = new Date();
 
 function formatDate(date) {
-	return new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(date);
+	return new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(date);
 }
