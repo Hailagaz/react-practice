@@ -1,8 +1,8 @@
 import './App.css';
-import Chapter1 from './chapter1';
-import Chapter2 from './chapter2';
-import { Profile } from './chapter2';
-import Chapter3 from './chapter3';
+import Chapter1 from './chapters/chapter1';
+import Chapter2 from './chapters/chapter2';
+import { Profile } from './chapters/chapter2';
+import Chapter3 from './chapters/chapter3';
 
 function App() {
 	return (
