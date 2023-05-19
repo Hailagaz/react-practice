@@ -23,20 +23,30 @@ function Avatar() {
 }
 
 function ToDoList() {
-	const name = 'Hedy Lamarr';
 	return (
-		<>
-			<h1>{name}'s ToDo List for {formatDate(today)}</h1>
-			<ul style={{
-				backgroundColor: 'black',
-				color: 'pink'
-			}}>
+		<div style={person.theme}>
+			<h1>{person.name}'s ToDo List for {formatDate(today)}</h1>
+			<img
+				src="https://i.imgur.com/yXOvdOSs.jpg"
+				alt="Hedy Lamarr"
+				className="avatar"
+			/>
+			<ul>
 				<li>Improve the videophone</li>
 				<li>Prepare aeronautics lectures</li>
 				<li>Work on the alcohol-fuelled engine</li>
 			</ul>
-		</>
+		</div>
 	);
+}
+
+const person = {
+	name: 'Hedy Lamarr',
+	theme: {
+		backgroundColor: 'black',
+		color: 'pink',
+		padding: '10px'
+	}
 }
 
 const today = new Date();
