@@ -1,3 +1,5 @@
+import { getImageUrl } from "../utils/utils";
+
 export default function Chapter5() {
 	return (
 		<>
@@ -12,20 +14,23 @@ export default function Chapter5() {
 				}
 				size={100}
 			/>
+			<h2>Chapter 5. Part 2</h2>
+			<Avatar 
+				
+			/>
+
 		</>
 	);
 }
 
 function Avatar({ person, size }) {
 	return (
-		<>
 			<img
 				className='avatar'
-				src="https://i.imgur.com/" + {this.props.person.imageId} + ".jpg"
-				alt={this.props.person.name}
-				width={this.props.size}
-				height={this.props.size}
+				src={getImageUrl(person)}
+				alt={person.name}
+				width={size}
+				height={size}
 			/>
-		</>
 	);
 }
