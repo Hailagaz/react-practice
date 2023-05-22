@@ -5,7 +5,7 @@ export default function Chapter5() {
 		<>
 			<br />
 			<h2>Chapter 5. Part 1</h2>
-			
+
 			<h2>Chapter 5. Part 2</h2>
 			<div>
 				<Avatar
@@ -17,7 +17,7 @@ export default function Chapter5() {
 						}
 					}
 				/>
-				<Avatar 
+				<Avatar
 					size={75}
 					person={
 						{
@@ -26,7 +26,7 @@ export default function Chapter5() {
 						}
 					}
 				/>
-				<Avatar 
+				<Avatar
 					size={50}
 					person={
 						{
@@ -35,6 +35,18 @@ export default function Chapter5() {
 						}
 					}
 				/>
+				<h2>chapter 5. Part 3</h2>
+				<Card>
+					<Avatar
+						size={100}
+						person={
+							{
+								name: 'Katsuko Saruhashi',
+								imageId: 'YfeOqp2'
+							}
+						}
+					/>
+				</Card>
 			</div>
 		</>
 	);
@@ -49,5 +61,13 @@ function Avatar({ person, size }) {
 			width={size}
 			height={size}
 		/>
+	);
+}
+
+function Card({ children }) {
+	return (
+		<div className='card'>
+			{children}
+		</div>
 	);
 }
