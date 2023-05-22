@@ -18,7 +18,7 @@ export default function Chapter5() {
 					}
 				/>
 				<Avatar 
-					size={50}
+					size={75}
 					person={
 						{
 							name: 'Aklilu Lemma',
