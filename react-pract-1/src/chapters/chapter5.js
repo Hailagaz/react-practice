@@ -46,6 +46,7 @@ export default function Chapter5() {
 							}
 						}
 					/>
+					<p>some test text</p>
 				</Card>
 			</div>
 		</>
