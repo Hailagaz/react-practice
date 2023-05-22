@@ -5,32 +5,49 @@ export default function Chapter5() {
 		<>
 			<br />
 			<h2>Chapter 5. Part 1</h2>
-			<Avatar 
-				person={
-					{
-						name: 'Lin Lanying',
-						imageId: '1bX5QH6'
-					}
-				}
-				size={100}
-			/>
+			
 			<h2>Chapter 5. Part 2</h2>
-			<Avatar 
-				
-			/>
-
+			<div>
+				<Avatar
+					size={100}
+					person={
+						{
+							name: 'Katsuko Saruhashi',
+							imageId: 'YfeOqp2'
+						}
+					}
+				/>
+				<Avatar 
+					size={50}
+					person={
+						{
+							name: 'Aklilu Lemma',
+							imageId: 'OKS67lh'
+						}
+					}
+				/>
+				<Avatar 
+					size={50}
+					person={
+						{
+							name: 'Lin Lanying',
+							imageId: '1bX5QH6'
+						}
+					}
+				/>
+			</div>
 		</>
 	);
 }
 
 function Avatar({ person, size }) {
 	return (
-			<img
-				className='avatar'
-				src={getImageUrl(person)}
-				alt={person.name}
-				width={size}
-				height={size}
-			/>
+		<img
+			className="avatar"
+			src={getImageUrl(person)}
+			alt={person.name}
+			width={size}
+			height={size}
+		/>
 	);
 }

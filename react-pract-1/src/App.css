@@ -52,6 +52,6 @@ img {
 }
 
 .avatar {
+	margin: 10px;
 	border-radius: 50%;
-	height: 90px;
 }
