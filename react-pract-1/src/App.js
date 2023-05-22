@@ -5,6 +5,7 @@ import { Profile } from './chapters/chapter2';
 import Chapter3 from './chapters/chapter3';
 import Chapter4 from './chapters/chapter4';
 import Chapter5 from './chapters/chapter5';
+import Chapter6 from './chapters/chapter6';
 
 function App() {
 	return (
@@ -20,6 +21,8 @@ function App() {
 			<Chapter4 />
 
 			<Chapter5 />
+			
+			<Chapter6 />
 		</div>
 	);
 }
