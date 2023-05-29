@@ -12,17 +12,25 @@ function PackingList() {
 		<section>
 			<h3>Temporary packing list</h3>
 			<ul>
-				<Item 
+				<Item
 					isPacked={true}
-					name="Space suit" 
+					name="Space suit"
 				/>
 				<Item
 					isPacked={true}
-					name="Helmet with a golden leaf" 
+					name="Helmet with a golden leaf"
 				/>
 				<Item
 					isPacked={false}
-					name="Photo of Tam" 
+					name="Photo of Tam"
+				/>
+				<Item
+					isPacked={false}
+					name="Photo of cats"
+				/>
+				<Item
+					isPacked={true}
+					name="Carwasher"
 				/>
 			</ul>
 		</section>
@@ -32,15 +40,10 @@ function PackingList() {
 function Item({ name, isPacked }) {
 	if (isPacked) {
 		return (
-			<>
-				<li className='item'>{name} ✔</li>
-			</>
-		);
-	} else {
-		return (
-			<>
-				<li className='item'>{name}</li>
-			</>
+			<li className='item'>{name} (✔)</li>
 		);
 	}
+	return (
+		<li className='item'>{name} (-)</li>
+	);
 }
