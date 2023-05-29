@@ -39,6 +39,11 @@ function PackingList() {
 
 function Item({ name, isPacked }) {
 		return (
-			<li className='item'>{isPacked ? name + ' (✔)' : name + ' (-)' }</li>
+			<li className='item'>
+				{isPacked ?
+					<del>{name + ' (✔)'}</del> :
+					name + ' (-)'
+				}
+			</li>
 		);
 }
