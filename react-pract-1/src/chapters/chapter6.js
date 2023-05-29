@@ -40,10 +40,11 @@ function PackingList() {
 function Item({ name, isPacked }) {
 		return (
 			<li className='item'>
-				{isPacked ?
+				{name} {isPacked && ' ✔' || ' -'}
+				{/* {isPacked ?
 					<del>{name + ' (✔)'}</del> :
 					name + ' (-)'
-				}
+				} */}
 			</li>
 		);
 }
