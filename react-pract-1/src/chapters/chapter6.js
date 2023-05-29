@@ -1,10 +1,27 @@
-export default function Chapter6() {
+function Item({ name, isPacked }) {
+	let itemContent = name;
+	if (isPacked) {
+		itemContent = (
+			<del>
+				{name + " ✔"}
+			</del>
+		)
+	}
 	return (
-		<>
-			<h2>Chapter 6. Part 1</h2>
-			<PackingList />
-		</>
+		<li className="item">
+			{itemContent}
+		</li>
 	);
+
+	// return (
+	// 	<li className='item'>
+	// 		{name} {isPacked && ' ✔' || ' -'}
+	// 		{/* {isPacked ?
+	// 			<del>{name + ' (✔)'}</del> :
+	// 			name + ' (-)'
+	// 		} */}
+	// 	</li>
+	// );
 }
 
 function PackingList() {
@@ -37,14 +54,11 @@ function PackingList() {
 	);
 }
 
-function Item({ name, isPacked }) {
-		return (
-			<li className='item'>
-				{name} {isPacked && ' ✔' || ' -'}
-				{/* {isPacked ?
-					<del>{name + ' (✔)'}</del> :
-					name + ' (-)'
-				} */}
-			</li>
-		);
+export default function Chapter6() {
+	return (
+		<>
+			<h2>Chapter 6. Part 1</h2>
+			<PackingList />
+		</>
+	);
 }
