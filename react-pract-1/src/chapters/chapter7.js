@@ -28,8 +28,7 @@ function List1({ people }) {
 function List2({ people }) {
 
 	let chemists = people.filter(person => person.profession === 'chemist');
-	let listProfsItem = chemists.map(person =>
-		<>
+	let listProfsItem = chemists.map(person => <>
 			<li>
 				<img src={getImageUrl(person)} alt={person.name} />
 			</li>
@@ -38,11 +37,10 @@ function List2({ people }) {
 				{' ' + person.profession + ' '}
 				known for {person.accomplishment}
 			</p>
-		</>
-	);
+	</>);
 	return (
 		<div>
-			<p>List of filered people by their profession</p>
+			<p>List of filtered people by their profession</p>
 			<ul>
 				{listProfsItem}
 			</ul>
