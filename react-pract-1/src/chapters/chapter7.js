@@ -28,7 +28,7 @@ function List1({ people }) {
 function List2({ people }) {
 
 	let chemists = people.filter(person => person.profession === 'chemist');
-	let listProfs = chemists.map(person =>
+	let listProfsItem = chemists.map(person =>
 		<>
 			<li>
 				<img src={getImageUrl(person)} alt={person.name} />
@@ -44,7 +44,7 @@ function List2({ people }) {
 		<div>
 			<p>List of filered people by their profession</p>
 			<ul>
-				{listProfs}
+				{listProfsItem}
 			</ul>
 		</div>
 	);
