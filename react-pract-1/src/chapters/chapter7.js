@@ -14,7 +14,7 @@ export default function Chapter7() {
 }
 
 function List1({ people }) {
-	let listItems = people.map(person => <li>{person}</li>)
+	let listItems = people.map(person => <li >{person}</li>)
 	return (
 		<div>
 			<p>List of people and their professions</p>
@@ -29,7 +29,7 @@ function List2({ people }) {
 
 	let chemists = people.filter(person => person.profession === 'chemist');
 	let listProfsItem = chemists.map(person => <>
-			<li>
+			<li key={person.id}>
 				<img src={getImageUrl(person)} alt={person.name} />
 			</li>
 			<p>
