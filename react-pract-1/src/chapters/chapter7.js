@@ -1,10 +1,14 @@
+import { getImageUrl } from "../utils/utils";
+import { listOne } from "../utils/data";
+import { listTwo } from "../utils/data";
+
 export default function Chapter7() {
 	return (
 		<>
 			<h2>Chapter 7. Part 1</h2>
 			<List1 people={listOne} />
 			<h2>Chapter 7. Part 2</h2>
-			<List2 people={listTwo}/>
+			<List2 people={listTwo} />
 		</>
 	);
 }
@@ -29,13 +33,3 @@ function List2({ people }) {
 		</div>
 	);
 }
-
-let listOne = [
-	'Creola Katherine Johnson: mathematician',
-	'Mario José Molina-Pasquel Henríquez: chemist',
-	'Mohammad Abdus Salam: physicist',
-	'Percy Lavon Julian: chemist',
-	'Subrahmanyan Chandrasekhar: astrophysicist'
-];
-
-let listTwo = []
