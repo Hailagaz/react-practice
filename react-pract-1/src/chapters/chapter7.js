@@ -35,14 +35,17 @@ function List2({ people }) {
 			</li>
 			<p>
 				<b>{person.name}:</b>
-				
+				{' ' + person.profession + ' '}
+				known for {person.accomplishment}
 			</p>
 		</>
 	);
 	return (
 		<div>
 			<p>List of filered people by their profession</p>
-
+			<ul>
+				{listProfs}
+			</ul>
 		</div>
 	);
 }
