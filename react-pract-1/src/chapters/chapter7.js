@@ -12,7 +12,9 @@ function List({ people }) {
 	return (
 		<>
 			<p>List of people and their professions</p>
-			{listItems}
+			<ul>
+				{listItems}
+			</ul>
 		</>
 	);
 }
