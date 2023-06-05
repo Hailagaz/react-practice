@@ -11,7 +11,12 @@ function Part1() {
 
 	return (
 		<div>
-			<p>Keep component pure all the times.
+			<p>
+				A component must be pure, meaning:
+				It minds its own business. It should not change any objects or variables that existed before rendering.
+				Same inputs, same output. Given the same inputs, a component should always return the same JSX.
+			</p>
+			<p>
 				Don't changable variables (change count in props but not by counting).
 				Formula-like behavior</p>
 			<Cup guest={1} />
