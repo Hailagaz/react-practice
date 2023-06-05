@@ -7,6 +7,7 @@ import Chapter4 from './chapters/chapter4';
 import Chapter5 from './chapters/chapter5';
 import Chapter6 from './chapters/chapter6';
 import Chapter7 from './chapters/chapter7';
+import Chapter8 from './chapters/chapter8';
 
 function App() {
 	return (
@@ -26,6 +27,8 @@ function App() {
 			<Chapter6 />
 
 			<Chapter7 />
+
+			<Chapter8 />
 		</div>
 	);
 }
