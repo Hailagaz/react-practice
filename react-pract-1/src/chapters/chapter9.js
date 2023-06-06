@@ -1,4 +1,4 @@
-import { sculptureList } from "../utils/data";
+import { sculptureList1 } from "../utils/data";
 import { useState } from 'react';
 
 export default function Chapter9() {
@@ -36,7 +36,7 @@ function Button({onClick, children}) {
 
 function Part2() {
 	return (
-		<Gallery sculptureList={sculptureList}/>
+		<Gallery sculptureList={sculptureList1}/>
 	);
 }
 

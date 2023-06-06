@@ -54,7 +54,7 @@ export const recipes = [{
 }];
 
 
-export const sculptureList = [{
+export const sculptureList1 = [{
 	name: 'Homenaje a la Neurocirugía',
 	artist: 'Marta Colvin Andrade',
 	description: 'Although Colvin is predominantly known for abstract themes that allude to pre-Hispanic symbols, this gigantic sculpture, an homage to neurosurgery, is one of her most recognizable public art pieces.',
