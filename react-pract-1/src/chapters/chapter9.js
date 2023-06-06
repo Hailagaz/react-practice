@@ -43,10 +43,9 @@ function Part2() {
 function Gallery({sculptureList}) {
 	const [index, setIndex] = useState(0);
 	const [showMore, setShowMore] = useState(false);
-	const hasNext = index < sculptureList.length - 1;
 
 	function handleNextClick() {
-		if (hasNext) {
+		if (index < sculptureList.length - 1) {
 			setIndex(index + 1);
 		} else {
 			setIndex(0);
