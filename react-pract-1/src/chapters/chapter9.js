@@ -36,11 +36,11 @@ function Button({onClick, children}) {
 
 function Part2() {
 	return (
-		<Gallery />
+		<Gallery sculptureList={sculptureList}/>
 	);
 }
 
-function Gallery() {
+function Gallery({sculptureList}) {
 	const [index, setIndex] = useState(0);
 	const [showMore, setShowMore] = useState(false);
 	const hasNext = index < sculptureList.length - 1;
