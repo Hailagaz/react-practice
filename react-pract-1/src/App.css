@@ -91,3 +91,28 @@ img {
 button {
 	margin: 10px;
 }
+
+
+
+
+h4 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+h5 {
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+img {
+	width: 120px;
+	height: 120px;
+}
+
+button {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
