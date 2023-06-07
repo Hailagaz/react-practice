@@ -8,19 +8,21 @@ export default function Chapter9() {
 			<Part1 />
 			<h1>Chapter 9. Part 2</h1>
 			<Part2 />
+			<h1>Chapter 9. Part 3</h1>
+			<Part3 />
 		</div>
 	);
 }
 
 function Part1() {
 	return (
-		<Toolbar 
+		<Toolbar
 			onPlayMovie={() => alert('Playing')}
 			onUploadImage={() => alert('Uploading')}
 		/>
 	);
 }
-function Toolbar({onPlayMovie, onUploadImage}) {
+function Toolbar({ onPlayMovie, onUploadImage }) {
 	return (
 		<div>
 			<Button onClick={onPlayMovie}>Play Movie</Button>
@@ -28,7 +30,7 @@ function Toolbar({onPlayMovie, onUploadImage}) {
 		</div>
 	);
 }
-function Button({onClick, children}) {
+function Button({ onClick, children }) {
 	return (
 		<button onClick={onClick}>{children}</button>
 	);
@@ -36,11 +38,11 @@ function Button({onClick, children}) {
 
 function Part2() {
 	return (
-		<Gallery sculptureList={sculptureList1}/>
+		<Gallery sculptureList={sculptureList1} />
 	);
 }
 
-function Gallery({sculptureList}) {
+function Gallery({ sculptureList }) {
 	const [index, setIndex] = useState(0);
 	const [showMore, setShowMore] = useState(false);
 
@@ -67,10 +69,50 @@ function Gallery({sculptureList}) {
 				{showMore ? 'Hide' : 'Show'} details
 			</button>
 			{showMore && <p>{sculpture.description}</p>}
-			<img 
+			<img
 				src={sculpture.url}
 				alt={sculpture.alt}
 			/>
 		</>
+	);
+}
+
+function Part3() {
+	return (
+		<>
+			<Form />
+		</>
+	);
+}
+
+function Form() {
+	const [to, setTo] = useState('Alice');
+	const [message, setMessage] = useState('Hello');
+
+	function handleSubmit(e) {
+		e.preventDefault();
+		setTimeout(() => {
+			alert(`You said ${message} to ${to}`);
+		}, 5000);
+	}
+
+	return (
+		<form onSubmit={handleSubmit}>
+			<label>
+				To:{' '}
+				<select
+					value={to}
+					onChange={e => setTo(e.target.value)}>
+					<option value="Alice">Alice</option>
+					<option value="Bob">Bob</option>
+				</select>
+			</label>
+			<textarea
+				placeholder="Message"
+				value={message}
+				onChange={e => setMessage(e.target.value)}
+			/>
+			<button type="submit">Send</button>
+		</form>
 	);
 }
