@@ -104,7 +104,9 @@ function Button({ onClick, children }) {
 function Part4() {
 	return (
 		<>
-		<AppSpec />
+			<AppSpec />
+			<h5>Another part (stop propagation)</h5>
+			<Toolbar4 />
 		</>
 	);
 }
@@ -139,3 +141,29 @@ function Button3({ onClick, children }) {
 	);
 }
 
+function Toolbar4() {
+	return (
+		<div className="Toolbar" onClick={() => {
+			alert('You clicked on the toolbar!');
+		}}>
+			<Button4 onClick={() => alert('Playing!')}>
+				Play Movie
+			</Button4>
+			<Button4 onClick={() => alert('Uploading!')}>
+				Upload Image
+			</Button4>
+		</div>
+	);
+}
+
+
+function Button4({ onClick, children }) {
+	return (
+		<button onClick={e => {
+			e.stopPropagation();
+			onClick();
+		}}>
+			{children}
+		</button>
+	);
+}

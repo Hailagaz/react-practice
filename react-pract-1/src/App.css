@@ -126,3 +126,9 @@ textarea {
 	margin-bottom: 10px;
 	display: block;
 }
+
+
+.Toolbar {
+	background: #aaa;
+	padding: 5px;
+}
