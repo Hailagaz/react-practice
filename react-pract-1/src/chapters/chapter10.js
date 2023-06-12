@@ -105,7 +105,7 @@ function Part4() {
 	return (
 		<>
 			<AppSpec />
-			<h5>Another part (stop propagation)</h5>
+			<h5>Another part below (stop propagation)</h5>
 			<Toolbar4 />
 		</>
 	);
