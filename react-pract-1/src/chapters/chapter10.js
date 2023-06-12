@@ -10,6 +10,8 @@ export default function Chapter10() {
 			<Part2 />
 			<h1>Chapter 10. Part 3</h1>
 			<Part3 />
+			<h1>Chapter 10. Part 4</h1>
+			<Part4 />
 		</>
 	);
 }
@@ -99,3 +101,12 @@ function Button({ onClick, children }) {
 		</button>
 	);
 }
+
+function Part4() {
+	return (
+		<>
+			
+		</>
+	);
+}
+
