@@ -39,10 +39,12 @@ function Toolbar() {
 		<div>
 			<AlertButton message='Playing'>Play Movie</AlertButton>
 			<AlertButton message='Uploading'>Upload Image</AlertButton>
+			<AlertButton message='Showing'>Show something</AlertButton>
 
 		</div>
 	);
 }
+
 function AlertButton({message, children}) {
 	return (
 		<button onClick={() => alert(message)}>
