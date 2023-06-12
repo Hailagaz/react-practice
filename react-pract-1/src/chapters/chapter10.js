@@ -8,6 +8,8 @@ export default function Chapter10() {
 			<Part1 />
 			<h1>Chapter 10. Part 2</h1>
 			<Part2 />
+			<h1>Chapter 10. Part 3</h1>
+			<Part3 />
 		</>
 	);
 }
@@ -50,5 +52,50 @@ function AlertButton({message, children}) {
 		<button onClick={() => alert(message)}>
 			{children}
 		</button>
+	);
+}
+
+function Part3() {
+	return (
+		<>
+			<Toolbar2 />
+		</>
+	);
+}
+
+function Toolbar2() {
+	return (
+		<div>
+			<PlayButton movieName="Kiki's Delivery Service" />
+			<UploadButton />
+		</div>
+	);
+}
+
+function PlayButton({ movieName }) {
+	function handlePlayClick() {
+		alert(`Playing ${movieName}!`);
+	}
+
+	return (
+		<Button onClick={handlePlayClick}>
+			Play "{movieName}"
+		</Button>
+	);
+}
+
+function Button({ onClick, children }) {
+	return (
+		<button onClick={onClick}>
+			{children}
+		</button>
+	);
+}
+
+function UploadButton() {
+	return (
+		<Button onClick={() => alert('Uploading!')}>
+			Upload Image
+		</Button>
 	);
 }
