@@ -84,18 +84,18 @@ function PlayButton({ movieName }) {
 	);
 }
 
-function Button({ onClick, children }) {
-	return (
-		<button onClick={onClick}>
-			{children}
-		</button>
-	);
-}
-
 function UploadButton() {
 	return (
 		<Button onClick={() => alert('Uploading!')}>
 			Upload Image
 		</Button>
+	);
+}
+
+function Button({ onClick, children }) {
+	return (
+		<button onClick={onClick}>
+			{children}
+		</button>
 	);
 }
