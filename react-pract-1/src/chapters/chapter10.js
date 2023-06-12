@@ -173,14 +173,29 @@ function Button4({ onClick, children }) {
 function Part5() {
 	return (
 		<>
-			<Signup />
+			<p>standard behavior</p>
+			<Signup1 />
+			<p>preventDefault behavior</p>
+			<Signup2 />
 		</>
 	);
 }
 
-function Signup() {
+function Signup1() {
 	return (
 		<form onSubmit={() => alert('Submitting!')}>
+			<input />
+			<button>Send</button>
+		</form>
+	);
+}
+
+function Signup2() {
+	return (
+		<form onSubmit={e => {
+			e.preventDefault();
+			alert('Submitting!');
+		}}>
 			<input />
 			<button>Send</button>
 		</form>
