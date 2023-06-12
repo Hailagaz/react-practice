@@ -11,6 +11,8 @@ export default function Chapter10() {
 			<Part3 />
 			<h1>Chapter 10. Part 4</h1>
 			<Part4 />
+			<h1>Chapter 10. Part 5</h1>
+			<Part5 />
 		</>
 	);
 }
@@ -165,5 +167,22 @@ function Button4({ onClick, children }) {
 		}}>
 			{children}
 		</button>
+	);
+}
+
+function Part5() {
+	return (
+		<>
+			<Signup />
+		</>
+	);
+}
+
+function Signup() {
+	return (
+		<form onSubmit={() => alert('Submitting!')}>
+			<input />
+			<button>Send</button>
+		</form>
 	);
 }
