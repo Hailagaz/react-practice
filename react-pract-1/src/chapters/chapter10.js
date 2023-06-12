@@ -37,7 +37,9 @@ function Part2() {
 function Toolbar() {
 	return (
 		<div>
-			<AlertButton></AlertButton>
+			<AlertButton message='Playing'>Play Movie</AlertButton>
+			<AlertButton message='Uploading'>Upload Image</AlertButton>
+
 		</div>
 	);
 }
