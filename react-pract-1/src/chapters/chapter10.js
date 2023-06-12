@@ -13,7 +13,18 @@ export default function Chapter10() {
 function Part1() {
 	return (
 		<>
-
+			<Button1 />
 		</>
+	);
+}
+
+function Button1() {
+	function handleClick() {
+		alert('Button clicked!');
+	}
+	return (
+		<button onClick={handleClick}>
+			Button with some effect
+		</button>
 	);
 }
