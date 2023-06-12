@@ -9,6 +9,7 @@ import Chapter6 from './chapters/chapter6';
 import Chapter7 from './chapters/chapter7';
 import Chapter8 from './chapters/chapter8';
 import Chapter9 from './chapters/chapter9';
+import Chapter10 from './chapters/chapter10';
 
 function App() {
 	return (
@@ -32,6 +33,8 @@ function App() {
 			<Chapter8 />
 
 			<Chapter9 />
+
+			<Chapter10 />
 		</div>
 	);
 }
