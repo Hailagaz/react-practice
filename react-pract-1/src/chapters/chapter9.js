@@ -12,6 +12,8 @@ export default function Chapter9() {
 			<Part3 />
 			<h1>Chapter 9. Part 4</h1>
 			<Part4 />
+			<h1>Chapter 9. Part 5</h1>
+			<Part5 />
 		</div>
 	);
 }
@@ -238,6 +240,14 @@ function FormTwo() {
 				src={person.artwork.image}
 				alt={person.artwork.title}
 			/>
+		</>
+	);
+}
+
+function Part5() {
+	return (
+		<>
+			
 		</>
 	);
 }
