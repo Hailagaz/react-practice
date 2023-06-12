@@ -1,4 +1,3 @@
-import { useState } from 'react';
 
 
 export default function Chapter10() {
@@ -105,8 +104,38 @@ function Button({ onClick, children }) {
 function Part4() {
 	return (
 		<>
-			
+		<AppSpec />
 		</>
+	);
+}
+
+function AppSpec() {
+	return (
+		<Toolbar3
+			onPlayMovie={() => alert('Playing!')}
+			onUploadImage={() => alert('Uploading!')}
+		/>
+	);
+}
+
+function Toolbar3({ onPlayMovie, onUploadImage }) {
+	return (
+		<div>
+			<Button3 onClick={onPlayMovie}>
+				Play Movie
+			</Button3>
+			<Button3 onClick={onUploadImage}>
+				Upload Image
+			</Button3>
+		</div>
+	);
+}
+
+function Button3({ onClick, children }) {
+	return (
+		<button onClick={onClick}>
+			{children}
+		</button>
 	);
 }
 
