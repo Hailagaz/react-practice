@@ -6,25 +6,45 @@ export default function Chapter10() {
 		<>
 			<h1>Chapter 10. Part 1</h1>
 			<Part1 />
+			<h1>Chapter 10. Part 2</h1>
+			<Part2 />
 		</>
 	);
 }
 
 function Part1() {
+	function handleClick() {
+		alert('Button clicked!');
+	}
+
 	return (
 		<>
-			<Button1 />
+			<button onClick={handleClick}>
+				Button with some effect
+			</button>
 		</>
 	);
 }
 
-function Button1() {
-	function handleClick() {
-		alert('Button clicked!');
-	}
+function Part2() {
 	return (
-		<button onClick={handleClick}>
-			Button with some effect
+		<>
+			<Toolbar />
+		</>
+	);
+}
+
+function Toolbar() {
+	return (
+		<div>
+			<AlertButton></AlertButton>
+		</div>
+	);
+}
+function AlertButton({message, children}) {
+	return (
+		<button onClick={() => alert(message)}>
+			{children}
 		</button>
 	);
 }
