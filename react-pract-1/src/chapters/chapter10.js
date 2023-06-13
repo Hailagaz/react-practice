@@ -13,6 +13,8 @@ export default function Chapter10() {
 			<Part4 />
 			<h1>Chapter 10. Part 5</h1>
 			<Part5 />
+			<h1>Chapter 10. Part 6</h1>
+			<Part6 />
 		</>
 	);
 }
@@ -199,5 +201,30 @@ function Signup2() {
 			<input />
 			<button>Send</button>
 		</form>
+	);
+}
+
+function Part6() {
+	return (
+		<>
+			<LightSwitch />
+		</>
+	);
+}
+
+function LightSwitch() {
+	function handleClick() {
+		let bodyStyle = document.body.style;
+		if (bodyStyle.backgroundColor === 'black') {
+			bodyStyle.backgroundColor = 'white';
+		} else {
+			bodyStyle.backgroundColor = 'black';
+		}
+	}
+
+	return (
+		<button onClick={handleClick}>
+			Toggle the lights
+		</button>
 	);
 }
