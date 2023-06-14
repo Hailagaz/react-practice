@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { sculptureList2 } from "../utils/data";
 
 export default function Chapter11() {
@@ -18,10 +19,14 @@ function Part1() {
 }
 
 function Gallery() {
-	let index = 0;
-
+	//let index = 0;
+	const [index, setIndex] = useState(0);
 	function handleClick() {
-		index = index + 1;
+		//index = index + 1;
+		if (index === sculptureList2.length - 1) {
+			setIndex(i => i = 0);
+		}
+		setIndex(i => i + 1);
 	}
 
 	let sculpture = sculptureList2[index];
