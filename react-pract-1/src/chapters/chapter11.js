@@ -17,6 +17,7 @@ function Part1() {
 			<Gallery1 />
 			<h6>gallery 2</h6>
 			<Gallery2 />
+			<Gallery2 />
 		</>
 	);
 }
