@@ -24,7 +24,7 @@ function Gallery() {
 	function handleClick() {
 		//index = index + 1;
 		if (index === sculptureList2.length - 1) {
-			setIndex(i => i = 0);
+			setIndex(i => i = -1);
 		}
 		setIndex(i => i + 1);
 	}
