@@ -19,10 +19,9 @@ function Part1() {
 }
 
 function Gallery() {
-	//let index = 0;
 	const [index, setIndex] = useState(0);
+
 	function handleClick() {
-		//index = index + 1;
 		if (index === sculptureList2.length - 1) {
 			setIndex(i => i = -1);
 		}
